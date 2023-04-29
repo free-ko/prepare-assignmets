@@ -6,10 +6,11 @@ import { GRADE_COLORS } from '~/constants';
 import { Product } from '~/types';
 import * as Styled from './CardItem.styled';
 
-const CardItem = ({ id, grade, imgURL, company, name, isSaved }: Product) => {
+const CardItem = (item: Product) => {
+  const { id, grade, imgURL, company, name, isSaved } = item;
   return (
     <li>
-      <Styled.LinkWrapper to={`/detail/${id}`}>
+      <Styled.LinkWrapper to={`/detail/${id}`} state={item}>
         <Styled.ImageWrapper>
           <Styled.GradeWrapper gradeColor={GRADE_COLORS[grade]}>
             <Styled.GradeTitle>{grade}</Styled.GradeTitle>
