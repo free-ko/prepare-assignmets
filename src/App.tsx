@@ -1,8 +1,15 @@
 import React from 'react';
 import { Router } from '~/router';
 
+import { GlobalLayout } from '~/styles';
+
 const App = () => {
-  return <Router />;
+  return (
+    <>
+      <GlobalLayout />
+      <Router />
+    </>
+  );
 };
 
 export default App;
