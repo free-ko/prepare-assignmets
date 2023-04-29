@@ -23,6 +23,7 @@ const CardList = () => {
       {mockDataList.map(({ id, grade, name, company, imgURL, isSaved }) => (
         <CardItem
           key={id}
+          id={id}
           name={name}
           grade={grade}
           company={company}
