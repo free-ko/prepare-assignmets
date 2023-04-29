@@ -1,11 +1,14 @@
+import { Link } from 'react-router-dom';
 import styled from '@emotion/styled';
 
-export const Wrapper = styled.li`
+export const LinkWrapper = styled(Link)`
   display: flex;
   gap: 12px;
 
   width: 100%;
   height: 96px;
+
+  text-decoration: none;
 `;
 
 export const ImageWrapper = styled.div`

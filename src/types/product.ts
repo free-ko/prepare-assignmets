@@ -1,6 +1,6 @@
 type Grade = 'A+' | 'A' | 'A-' | 'B+' | 'B' | 'B-' | 'C';
 export type Product = {
-  id?: string;
+  id: string;
   grade: Grade;
   imgURL: string;
   company: string;
