@@ -1,0 +1,60 @@
+import { Product } from '~/types';
+
+export const mockDataList: Product[] = [
+  {
+    id: '1',
+    grade: 'A+',
+    imgURL: 'https://picsum.photos/200',
+    company: '포켓샐러드',
+    name: '밥보다 샐러드 닭가슴살햄슬라이스&스모크드치즈',
+    isSaved: false,
+  },
+  {
+    id: '2',
+    grade: 'A',
+    imgURL: 'https://picsum.photos/200',
+    company: '(주)샐러드판다',
+    name: '모짜렐라와 첫사랑에 빠진 판다',
+    isSaved: true,
+  },
+  {
+    id: '3',
+    grade: 'A-',
+    imgURL: 'https://picsum.photos/200',
+    company: '(주)샐러드판다',
+    name: '단호박리코타치즈 샐러드',
+    isSaved: false,
+  },
+  {
+    id: '4',
+    grade: 'B+',
+    imgURL: 'https://picsum.photos/200',
+    company: '(주)샐러드팜',
+    name: '내가 몸짱이 될 샐러드 게맛살&메추리알 샐러드',
+    isSaved: false,
+  },
+  {
+    id: '5',
+    grade: 'B',
+    imgURL: 'https://picsum.photos/200',
+    company: '(주)샐러드팜',
+    name: '밥보다샐러드 단호박무스&닭가슴살 햄 슬라이스',
+    isSaved: false,
+  },
+  {
+    id: '6',
+    grade: 'B-',
+    imgURL: 'https://picsum.photos/200',
+    company: '(주)샐러드팜',
+    name: 'OK!COOK 그라나파다노 샐러드',
+    isSaved: false,
+  },
+  {
+    id: '7',
+    grade: 'C',
+    imgURL: 'https://picsum.photos/200',
+    company: '㈜에이타워(포켓샐러드)',
+    name: 'OK!COOK 그라나파다노 샐러드',
+    isSaved: false,
+  },
+];

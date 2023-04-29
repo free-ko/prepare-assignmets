@@ -2,27 +2,28 @@ import React from 'react';
 
 import { IconSave } from '~/components/Icons';
 import { GRADE_COLORS } from '~/constants';
+import { Product } from '~/types';
 
 import * as Styled from './CardItem.styled';
 
-const CardItem = () => {
+const CardItem = ({ grade, imgURL, company, name, isSaved }: Product) => {
   return (
     <Styled.Wrapper>
       <Styled.ImageWrapper>
-        <Styled.GradeWrapper gradeColor={GRADE_COLORS['A+']}>
-          <Styled.GradeTitle>A+</Styled.GradeTitle>
+        <Styled.GradeWrapper gradeColor={GRADE_COLORS[grade]}>
+          <Styled.GradeTitle>{grade}</Styled.GradeTitle>
         </Styled.GradeWrapper>
-        <Styled.Image alt="card-image" src="https://picsum.photos/200" />
+        <Styled.Image alt="card-image" src={imgURL} />
       </Styled.ImageWrapper>
 
       <Styled.InfoWrapper>
         <Styled.InfoTextWrapper>
-          <Styled.Title>포켓샐러드</Styled.Title>
-          <Styled.Text>밥보다 샐러드 닭가슴살햄슬라이스&스모크드치즈</Styled.Text>
+          <Styled.Title>{company}</Styled.Title>
+          <Styled.Text>{name}</Styled.Text>
         </Styled.InfoTextWrapper>
 
         <Styled.IconWrapper>
-          <IconSave isSaved />
+          <IconSave isSaved={isSaved} />
         </Styled.IconWrapper>
       </Styled.InfoWrapper>
     </Styled.Wrapper>

@@ -11,6 +11,8 @@ export const Wrapper = styled.li`
 export const ImageWrapper = styled.div`
   position: relative;
 
+  flex-shrink: 0;
+
   width: 129px;
   height: 96px;
 
@@ -51,6 +53,8 @@ export const InfoWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  width: 202px;
 `;
 
 export const InfoTextWrapper = styled.div`

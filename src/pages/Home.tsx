@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 import { Buttons } from '~/components/Buttons';
-import { CardItem } from '~/components/CardItem';
+import { CardList } from '~/components/CardList';
 
 import { GapUpDownBy } from '~/styles';
 
@@ -38,7 +38,7 @@ const HomePage = () => {
       <GapUpDownBy $height={27} />
       <Buttons />
       <GapUpDownBy $height={24} />
-      <CardItem />
+      <CardList />
     </Styled.Wrapper>
   );
 };
