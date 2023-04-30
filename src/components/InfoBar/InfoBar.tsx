@@ -2,7 +2,7 @@ import React from 'react';
 
 import { GapUpDownBy } from '~/styles';
 
-import * as Styled from './ProgressBar.styled';
+import * as Styled from './InfoBar.styled';
 
 type Info = {
   title?: string;
@@ -11,7 +11,7 @@ type Info = {
 };
 
 type Props = Info[];
-const ProgressBar = ({ data }: { data: Props }) => {
+const InfoBar = ({ data }: { data: Props }) => {
   const getPercent = (target: string, total: string) => {
     const regex = /\D/g;
     const targetNumber = parseInt(target.replace(regex, ''), 10);
@@ -75,4 +75,4 @@ const ProgressBar = ({ data }: { data: Props }) => {
   );
 };
 
-export default ProgressBar;
+export default InfoBar;

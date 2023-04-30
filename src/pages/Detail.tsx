@@ -5,17 +5,14 @@ import styled from '@emotion/styled';
 import { DetailBox } from '~/components/DetailBox';
 import { DETAIL_MOCK_DATA } from '~/components/DetailBox/mockData';
 import { IconBack, IconSave } from '~/components/Icons';
-import { ProgressBar } from '~/components/ProgressBar';
-import { KCAL_LIST, NUTRIENT_LIST } from '~/components/ProgressBar/mockData';
+import { InfoBar } from '~/components/InfoBar';
+import { KCAL_LIST, NUTRIENT_LIST } from '~/components/InfoBar/mockData';
 import { GapUpDownBy } from '~/styles';
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  height: 100vh;
-  overflow-y: scroll;
 
   padding: 0 16px;
   background-color: #121212;
@@ -188,7 +185,7 @@ const DetailPage = () => {
 
       <Styled.DesText>하루 2000칼로리의 식단을 기준으로 합니다.</Styled.DesText>
       <GapUpDownBy $height={15} />
-      <ProgressBar data={KCAL_LIST} />
+      <InfoBar data={KCAL_LIST} />
 
       <GapUpDownBy $height={40} />
 
@@ -199,7 +196,7 @@ const DetailPage = () => {
 
       <Styled.DesText>백분율은 하루 2000칼로리의 식단을 기준으로 합니다.</Styled.DesText>
       <GapUpDownBy $height={15} />
-      <ProgressBar data={NUTRIENT_LIST} />
+      <InfoBar data={NUTRIENT_LIST} />
     </Styled.Wrapper>
   );
 };
